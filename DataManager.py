@@ -3,7 +3,7 @@ Created on May 26, 2014
 
 @author: andreamonacchi
 '''
-
+import time
 import sys
 import web
 import threading
@@ -12,6 +12,9 @@ from rdflib.graph import Graph
 from rdflib.namespace import Namespace, DC, XSD, FOAF
 from rdflib.extras.describer import Describer
 from DataModel import Appliance, ApplianceType, SmartAppliance, State, Status, ModelBasedDeviceSignature, PhysicalService
+
+
+shared_file = "graph.rdf"
 
 # ---------------- Webserver ----------------
 urls = (
@@ -43,7 +46,16 @@ WHERE {
     def POST(self):
         # web.data() # returns the form raw data
         data = web.input(query="")
-        return data.query
+        g = rdflib.Graph()
+        g.parse(shared_file, format="n3") # make a copy of the current graph status (a DBMS should be used in future)
+        qres = g.query(data.query)
+        result = ""
+        for row in qres:
+            result += "<ul>"
+            for r in row:
+                result += "<li>"+r+"</li>"
+            result += "</ul></br>"
+        return "<html><body>"+result+"</body></html>"
         # Create an instance of rdflib to get the current graph of the KB
         # Pass the sparql query and return the result as triples in json
 # -------------------------------------------
@@ -116,6 +128,13 @@ class DataManager:
         """ Exports the graph in the given format, default is XML """
         return self.g.serialize(format=output_format)
     
+    def export_to_file(self, output_format, filepath):
+        """ Exports the graph in the given format to a textfile """
+        #print(self.g.serialize(format=output_format))
+        target = open(filepath, 'w')
+        target.write(self.g.serialize(format=output_format))
+        target.close()
+    
     def get_KB_size(self):
         return len(self.g)
 
@@ -130,26 +149,29 @@ class SmartGateway(threading.Thread):
     """
     Implements the load disaggregation/detection component and manages the integration of extracted information
     """
-    def __init__(self):
+    def __init__(self, shared_file=None):
         # init thread constructor
         threading.Thread.__init__(self)
         
         self._terminate = False
+        self.shared_file = shared_file
         
         # id of the household
         house_id = "12345"
         try:
             # Create a data manager for a given household (HEMS)
             self.data_manager = DataManager(house_id)
+            print("Data Manager started..")
             # Create a load disaggregator driver
             self.loadDisaggregator = LoadDisaggregator()
+            print("Disaggregator started..")
         except Exception as e:
             print "Exception: ", e
             sys.exit(0)
         else:
             # Start interfaces to query the KB
             self.__start_web_server_interface()
-            self.__start_query_interface()
+            #self.__start_query_interface() # only from CLI
             
     def get_KB_size(self):
         return self.data_manager.get_KB_size()    
@@ -158,8 +180,8 @@ class SmartGateway(threading.Thread):
         threading.Thread(target=self._query_interface).start()
         
     def __start_web_server_interface(self):
-        #threading.Thread(target=self._query_web_interface).start()
-        self._query_web_interface()
+        threading.Thread(target=self._query_web_interface).start()
+        #self._query_web_interface()
         
     def _query_web_interface(self):
         # Start a webserver at the 8080 port
@@ -212,8 +234,14 @@ class SmartGateway(threading.Thread):
             # Collect device profiles from legacy devices
             self.__collect_device_profiles_from_legacy_devices()
             
-        # Print all extracted device information
-        print self.data_manager.export_to_string('n3')
+            # save to memory all extracted device information
+            #print self.data_manager.export_to_string('n3')
+            if self.shared_file is not None:
+                print("Saving to file "+self.shared_file)
+                self.data_manager.export_to_file('n3', self.shared_file)
+            
+            time.sleep(20) # sleep for 20 secs
+            
     
     def __collect_device_profiles_from_smart_appliances(self):
         # -------- Smart water kettle
@@ -253,9 +281,9 @@ class SmartGateway(threading.Thread):
 
 
 if __name__ == '__main__':
-    gateway = SmartGateway()
+    gateway = SmartGateway(shared_file=shared_file)
     # starts the collection of data from smart appliances and legacy devices
-    gateway.run()
+    gateway.start() #.run()
     
     if False:
         print"\n\n------------------------------------------- "
