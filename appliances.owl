@@ -1,0 +1,1691 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.monergy-project.eu/ontologies/appliances"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.monergy-project.eu/ontologies/appliances">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An ontology for the description of electrical devices for Home Energy Management Systems</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#ActivePower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApparentPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Appliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApplianceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CleaningDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoffeeMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commodore64"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerScreen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CookingAppliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoolAppliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CordlessPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Current"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesktopComputer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiscPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DishWasher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricalBicicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricalVehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyRatingCanada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyRatingEurope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyRatingOceania"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnergyRatingUS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntertainmentAppliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freezer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FridgeWithFreezer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GameBoy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GameGear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GamingAppliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GamingConsole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomeTheater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImagingDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KitchenDevices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaundryAppliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoadIdentificationModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediaAppliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MicrowaveOven"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MobileGameAppliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MobilePhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelBasedDeviceSignature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfficeAppliances"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oven"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PermanentDeviceSignature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalComputer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhoneDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlayStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Power"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Printer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReactivePower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scanner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SetTopBox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Signature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartAppliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmartService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SteadyStateFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stove"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportationDevices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UninterruptiblePowerSupply"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VacuumCleaner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voltage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WashingMachine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterKettle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wii"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XBOX"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEnergyClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInitialObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLoadIdentificationModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSignature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStateModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasConsumption"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDelaySensitivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasElapsedDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInterruptionSensitivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasM2MInterfaceLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasManufacturerProductID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMeasurementUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasObservationDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasObservedValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOrder"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPeakPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasServiceName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStateDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTransitionProbability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUnixStartTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWorkingPowerTolerance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#implementsM2MTechnology"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isControllable"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isUserDriven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Device0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EnergyRatingEuropeA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InitialObservationKettle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KettleSignature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KettleState0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KettleStatusOFF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KettleStatusON"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KettleStatusPaused"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LoadIdentificationModelWaterKettle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ObservedFeatureKettle0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ObservedFeatureKettle1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SecondObservationKettle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ServiceHeatWater"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransitionKettleOffOff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransitionKettleOffOn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransitionKettleOnOff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransitionKettleOnOn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WaterKettleType"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ActivePower"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Power"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasMeasurementUnit"/>
+                <Literal datatypeIRI="&xsd;string">Watts</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ApparentPower"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Power"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasMeasurementUnit"/>
+                <Literal datatypeIRI="&xsd;string">VoltAmperes</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Appliance"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasService"/>
+                <Class IRI="#Service"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasEnergyClass"/>
+                <Class IRI="#EnergyRating"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasService"/>
+                <Class IRI="#Service"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#ApplianceType"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasEnergyClass"/>
+                <Class IRI="#EnergyRating"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasLoadIdentificationModel"/>
+                <Class IRI="#LoadIdentificationModel"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#ApplianceType"/>
+            </ObjectExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasManufacturer"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasManufacturerProductID"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#isControllable"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#isUserDriven"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Current"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#SteadyStateFeature"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasMeasurementUnit"/>
+                <Literal datatypeIRI="&xsd;string">Amperes</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Feature"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasMeasurementUnit"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Feature"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasObservedValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LoadIdentificationModel"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasInitialObservation"/>
+                <Class IRI="#Observation"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasInitialObservation"/>
+                <Class IRI="#Observation"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ModelBasedDeviceSignature"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Signature"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasStateModel"/>
+                <Class IRI="#State"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasStateModel"/>
+                <Class IRI="#State"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Observation"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasFeature"/>
+                <Class IRI="#Feature"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTransition"/>
+                <Class IRI="#Transition"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasFeature"/>
+                <Class IRI="#Feature"/>
+            </ObjectAllValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasTransition"/>
+                <Class IRI="#Transition"/>
+            </ObjectAllValuesFrom>
+            <DataMaxCardinality cardinality="1">
+                <DataProperty IRI="#hasObservationDuration"/>
+                <Datatype abbreviatedIRI="xsd:int"/>
+            </DataMaxCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PermanentDeviceSignature"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Signature"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasPeakPower"/>
+                <Datatype abbreviatedIRI="xsd:double"/>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PhysicalService"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Service"/>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasSignature"/>
+                    <Class IRI="#Signature"/>
+                </ObjectAllValuesFrom>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasStatus"/>
+                    <Class IRI="#Status"/>
+                </ObjectAllValuesFrom>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="#hasSignature"/>
+                    <Class IRI="#Signature"/>
+                </ObjectExactCardinality>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="#hasStatus"/>
+                    <Class IRI="#Status"/>
+                </ObjectExactCardinality>
+                <DataExactCardinality cardinality="1">
+                    <DataProperty IRI="#hasConsumption"/>
+                    <Datatype abbreviatedIRI="xsd:double"/>
+                </DataExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ReactivePower"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Power"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasMeasurementUnit"/>
+                <Literal datatypeIRI="&xsd;string">VoltAmperesReactive</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Service"/>
+        <ObjectIntersectionOf>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasDescription"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasServiceName"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Signature"/>
+        <ObjectUnionOf>
+            <Class IRI="#ModelBasedDeviceSignature"/>
+            <Class IRI="#PermanentDeviceSignature"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SmartAppliance"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Appliance"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#implementsM2MTechnology"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="#isControllable"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SmartService"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PhysicalService"/>
+            <Class IRI="#VirtualService"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#State"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasDelaySensitivity"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="&xsd;minInclusive">
+                        <Literal datatypeIRI="&xsd;integer">0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasDelaySensitivity"/>
+                <Datatype abbreviatedIRI="xsd:int"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasInterruptionSensitivity"/>
+                <Datatype abbreviatedIRI="xsd:int"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasOrder"/>
+                <Datatype abbreviatedIRI="xsd:int"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasPeakPower"/>
+                <Datatype abbreviatedIRI="xsd:double"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasStateDuration"/>
+                <Datatype abbreviatedIRI="xsd:int"/>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasWorkingPowerTolerance"/>
+                <Datatype abbreviatedIRI="xsd:double"/>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Status"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#KettleStatusON"/>
+            <NamedIndividual IRI="#KettleStatusOFF"/>
+            <NamedIndividual IRI="#KettleStatusPaused"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Transition"/>
+        <ObjectIntersectionOf>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasNextObservation"/>
+                <Class IRI="#Observation"/>
+            </ObjectAllValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasNextObservation"/>
+                <Class IRI="#Observation"/>
+            </ObjectExactCardinality>
+            <DataMaxCardinality cardinality="1">
+                <DataProperty IRI="#hasTransitionProbability"/>
+                <Datatype abbreviatedIRI="xsd:double"/>
+            </DataMaxCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VirtualService"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Service"/>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasM2MInterfaceLocation"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Voltage"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#SteadyStateFeature"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasMeasurementUnit"/>
+                <Literal datatypeIRI="&xsd;string">Voltage</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#CleaningDevice"/>
+        <Class IRI="#ApplianceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoffeeMachine"/>
+        <Class IRI="#KitchenDevices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commodore64"/>
+        <Class IRI="#GamingConsole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerScreen"/>
+        <Class IRI="#PersonalComputer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CookingAppliance"/>
+        <Class IRI="#KitchenDevices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoolAppliance"/>
+        <Class IRI="#ApplianceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CordlessPhone"/>
+        <Class IRI="#PhoneDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesktopComputer"/>
+        <Class IRI="#PersonalComputer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiscPlayer"/>
+        <Class IRI="#MediaAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DishWasher"/>
+        <Class IRI="#KitchenDevices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drier"/>
+        <Class IRI="#LaundryAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalBicicle"/>
+        <Class IRI="#TransportationDevices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalVehicle"/>
+        <Class IRI="#TransportationDevices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyRatingCanada"/>
+        <Class IRI="#EnergyRating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyRatingEurope"/>
+        <Class IRI="#EnergyRating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyRatingOceania"/>
+        <Class IRI="#EnergyRating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnergyRatingUS"/>
+        <Class IRI="#EnergyRating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntertainmentAppliance"/>
+        <Class IRI="#ApplianceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fax"/>
+        <Class IRI="#PhoneDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freezer"/>
+        <Class IRI="#CoolAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fridge"/>
+        <Class IRI="#CoolAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FridgeWithFreezer"/>
+        <Class IRI="#CoolAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GameBoy"/>
+        <Class IRI="#MobileGameAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GameGear"/>
+        <Class IRI="#MobileGameAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GamingAppliance"/>
+        <Class IRI="#EntertainmentAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GamingConsole"/>
+        <Class IRI="#GamingAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomeTheater"/>
+        <Class IRI="#MediaAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImagingDevice"/>
+        <Class IRI="#OfficeAppliances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KitchenDevices"/>
+        <Class IRI="#ApplianceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <Class IRI="#PersonalComputer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaundryAppliance"/>
+        <Class IRI="#ApplianceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediaAppliance"/>
+        <Class IRI="#EntertainmentAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MicrowaveOven"/>
+        <Class IRI="#CookingAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MobileGameAppliance"/>
+        <Class IRI="#GamingAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MobilePhone"/>
+        <Class IRI="#PhoneDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficeAppliances"/>
+        <Class IRI="#ApplianceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oven"/>
+        <Class IRI="#CookingAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalComputer"/>
+        <Class IRI="#OfficeAppliances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhoneDevice"/>
+        <Class IRI="#EntertainmentAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlayStation"/>
+        <Class IRI="#GamingConsole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power"/>
+        <Class IRI="#SteadyStateFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Printer"/>
+        <Class IRI="#ImagingDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radio"/>
+        <Class IRI="#MediaAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scanner"/>
+        <Class IRI="#ImagingDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SetTopBox"/>
+        <Class IRI="#MediaAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Status"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasCurrentState"/>
+            <Class IRI="#State"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Status"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCurrentState"/>
+            <Class IRI="#State"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Status"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasElapsedDuration"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Status"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasUnixStartTime"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SteadyStateFeature"/>
+        <Class IRI="#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stove"/>
+        <Class IRI="#CookingAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV"/>
+        <Class IRI="#MediaAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportationDevices"/>
+        <Class IRI="#ApplianceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UninterruptiblePowerSupply"/>
+        <Class IRI="#OfficeAppliances"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VacuumCleaner"/>
+        <Class IRI="#CleaningDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WashingMachine"/>
+        <Class IRI="#LaundryAppliance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterKettle"/>
+        <Class IRI="#KitchenDevices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wii"/>
+        <Class IRI="#GamingConsole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XBOX"/>
+        <Class IRI="#GamingConsole"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ActivePower"/>
+        <Class IRI="#ApparentPower"/>
+        <Class IRI="#ReactivePower"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CleaningDevice"/>
+        <Class IRI="#CoolAppliance"/>
+        <Class IRI="#EntertainmentAppliance"/>
+        <Class IRI="#KitchenDevices"/>
+        <Class IRI="#LaundryAppliance"/>
+        <Class IRI="#OfficeAppliances"/>
+        <Class IRI="#TransportationDevices"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CoffeeMachine"/>
+        <Class IRI="#CookingAppliance"/>
+        <Class IRI="#DishWasher"/>
+        <Class IRI="#WaterKettle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Commodore64"/>
+        <Class IRI="#PlayStation"/>
+        <Class IRI="#Wii"/>
+        <Class IRI="#XBOX"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ComputerScreen"/>
+        <Class IRI="#DesktopComputer"/>
+        <Class IRI="#Laptop"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CordlessPhone"/>
+        <Class IRI="#Fax"/>
+        <Class IRI="#MobilePhone"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Current"/>
+        <Class IRI="#Power"/>
+        <Class IRI="#Voltage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiscPlayer"/>
+        <Class IRI="#HomeTheater"/>
+        <Class IRI="#Radio"/>
+        <Class IRI="#SetTopBox"/>
+        <Class IRI="#TV"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Drier"/>
+        <Class IRI="#WashingMachine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElectricalBicicle"/>
+        <Class IRI="#ElectricalVehicle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EnergyRatingCanada"/>
+        <Class IRI="#EnergyRatingEurope"/>
+        <Class IRI="#EnergyRatingOceania"/>
+        <Class IRI="#EnergyRatingUS"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Freezer"/>
+        <Class IRI="#Fridge"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Freezer"/>
+        <Class IRI="#FridgeWithFreezer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fridge"/>
+        <Class IRI="#FridgeWithFreezer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GameBoy"/>
+        <Class IRI="#GameGear"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GamingAppliance"/>
+        <Class IRI="#MediaAppliance"/>
+        <Class IRI="#PhoneDevice"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GamingConsole"/>
+        <Class IRI="#MobileGameAppliance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ImagingDevice"/>
+        <Class IRI="#PersonalComputer"/>
+        <Class IRI="#UninterruptiblePowerSupply"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MicrowaveOven"/>
+        <Class IRI="#Oven"/>
+        <Class IRI="#Stove"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ModelBasedDeviceSignature"/>
+        <Class IRI="#PermanentDeviceSignature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Printer"/>
+        <Class IRI="#Scanner"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Appliance"/>
+        <NamedIndividual IRI="#Device0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EnergyRatingEurope"/>
+        <NamedIndividual IRI="#EnergyRatingEuropeA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#InitialObservationKettle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelBasedDeviceSignature"/>
+        <NamedIndividual IRI="#KettleSignature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#KettleState0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status"/>
+        <NamedIndividual IRI="#KettleStatusOFF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status"/>
+        <NamedIndividual IRI="#KettleStatusON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status"/>
+        <NamedIndividual IRI="#KettleStatusPaused"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LoadIdentificationModel"/>
+        <NamedIndividual IRI="#LoadIdentificationModelWaterKettle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ActivePower"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ActivePower"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Observation"/>
+        <NamedIndividual IRI="#SecondObservationKettle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalService"/>
+        <NamedIndividual IRI="#ServiceHeatWater"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transition"/>
+        <NamedIndividual IRI="#TransitionKettleOffOff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transition"/>
+        <NamedIndividual IRI="#TransitionKettleOffOn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transition"/>
+        <NamedIndividual IRI="#TransitionKettleOnOff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transition"/>
+        <NamedIndividual IRI="#TransitionKettleOnOn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WaterKettle"/>
+        <NamedIndividual IRI="#WaterKettleType"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEnergyClass"/>
+        <NamedIndividual IRI="#Device0"/>
+        <NamedIndividual IRI="#EnergyRatingEuropeA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasService"/>
+        <NamedIndividual IRI="#Device0"/>
+        <NamedIndividual IRI="#ServiceHeatWater"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Device0"/>
+        <NamedIndividual IRI="#WaterKettleType"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#InitialObservationKettle"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStateModel"/>
+        <NamedIndividual IRI="#KettleSignature"/>
+        <NamedIndividual IRI="#KettleState0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCurrentState"/>
+        <NamedIndividual IRI="#KettleStatusOFF"/>
+        <NamedIndividual IRI="#KettleState0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCurrentState"/>
+        <NamedIndividual IRI="#KettleStatusON"/>
+        <NamedIndividual IRI="#KettleState0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCurrentState"/>
+        <NamedIndividual IRI="#KettleStatusPaused"/>
+        <NamedIndividual IRI="#KettleState0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransition"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle0"/>
+        <NamedIndividual IRI="#TransitionKettleOffOff"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransition"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle0"/>
+        <NamedIndividual IRI="#TransitionKettleOffOn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransition"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle1"/>
+        <NamedIndividual IRI="#TransitionKettleOnOn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTransition"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle1"/>
+        <NamedIndividual IRI="#TransitionKettleOnOff"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFeature"/>
+        <NamedIndividual IRI="#SecondObservationKettle"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSignature"/>
+        <NamedIndividual IRI="#ServiceHeatWater"/>
+        <NamedIndividual IRI="#KettleSignature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStatus"/>
+        <NamedIndividual IRI="#ServiceHeatWater"/>
+        <NamedIndividual IRI="#KettleStatusOFF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNextObservation"/>
+        <NamedIndividual IRI="#TransitionKettleOffOff"/>
+        <NamedIndividual IRI="#InitialObservationKettle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNextObservation"/>
+        <NamedIndividual IRI="#TransitionKettleOffOn"/>
+        <NamedIndividual IRI="#SecondObservationKettle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNextObservation"/>
+        <NamedIndividual IRI="#TransitionKettleOnOff"/>
+        <NamedIndividual IRI="#InitialObservationKettle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNextObservation"/>
+        <NamedIndividual IRI="#TransitionKettleOnOn"/>
+        <NamedIndividual IRI="#SecondObservationKettle"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasManufacturer"/>
+        <NamedIndividual IRI="#Device0"/>
+        <Literal datatypeIRI="&xsd;string">Lakeside Labs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isControllable"/>
+        <NamedIndividual IRI="#Device0"/>
+        <Literal datatypeIRI="&xsd;boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isUserDriven"/>
+        <NamedIndividual IRI="#Device0"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDelaySensitivity"/>
+        <NamedIndividual IRI="#KettleState0"/>
+        <Literal datatypeIRI="&xsd;int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasInterruptionSensitivity"/>
+        <NamedIndividual IRI="#KettleState0"/>
+        <Literal datatypeIRI="&xsd;int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOrder"/>
+        <NamedIndividual IRI="#KettleState0"/>
+        <Literal datatypeIRI="&xsd;int">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPeakPower"/>
+        <NamedIndividual IRI="#KettleState0"/>
+        <Literal datatypeIRI="&xsd;double">1800.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStateDuration"/>
+        <NamedIndividual IRI="#KettleState0"/>
+        <Literal datatypeIRI="&xsd;int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWorkingPowerTolerance"/>
+        <NamedIndividual IRI="#KettleState0"/>
+        <Literal datatypeIRI="&xsd;double">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasObservedValue"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle0"/>
+        <Literal datatypeIRI="&xsd;double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasObservedValue"/>
+        <NamedIndividual IRI="#ObservedFeatureKettle1"/>
+        <Literal datatypeIRI="&xsd;double">1800.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasConsumption"/>
+        <NamedIndividual IRI="#ServiceHeatWater"/>
+        <Literal datatypeIRI="&xsd;double">0.03</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#ServiceHeatWater"/>
+        <Literal datatypeIRI="&xsd;string">This is the water heating functionality of the kettle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServiceName"/>
+        <NamedIndividual IRI="#ServiceHeatWater"/>
+        <Literal datatypeIRI="&xsd;string">Water heating service</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransitionProbability"/>
+        <NamedIndividual IRI="#TransitionKettleOffOff"/>
+        <Literal datatypeIRI="&xsd;double">0.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransitionProbability"/>
+        <NamedIndividual IRI="#TransitionKettleOffOn"/>
+        <Literal datatypeIRI="&xsd;double">0.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransitionProbability"/>
+        <NamedIndividual IRI="#TransitionKettleOnOff"/>
+        <Literal datatypeIRI="&xsd;double">0.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTransitionProbability"/>
+        <NamedIndividual IRI="#TransitionKettleOnOn"/>
+        <Literal datatypeIRI="&xsd;double">0.6</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInitialObservation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLoadIdentificationModel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCurrentState"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasEnergyClass"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSignature"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasStatus"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasType"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentState"/>
+        <Class IRI="#Status"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFeature"/>
+        <Class IRI="#Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInitialObservation"/>
+        <Class IRI="#LoadIdentificationModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLoadIdentificationModel"/>
+        <Class IRI="#Appliance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNextObservation"/>
+        <Class IRI="#Transition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasService"/>
+        <Class IRI="#Appliance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSignature"/>
+        <Class IRI="#PhysicalService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStateModel"/>
+        <Class IRI="#ModelBasedDeviceSignature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStatus"/>
+        <Class IRI="#PhysicalService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransition"/>
+        <Class IRI="#Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#Appliance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCurrentState"/>
+        <Class IRI="#State"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFeature"/>
+        <Class IRI="#Feature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInitialObservation"/>
+        <Class IRI="#Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLoadIdentificationModel"/>
+        <Class IRI="#LoadIdentificationModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNextObservation"/>
+        <Class IRI="#Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasService"/>
+        <Class IRI="#Service"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSignature"/>
+        <Class IRI="#Signature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStateModel"/>
+        <Class IRI="#State"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStatus"/>
+        <Class IRI="#Status"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransition"/>
+        <Class IRI="#Transition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#ApplianceType"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasConsumption"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isControllable"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasConsumption"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDelaySensitivity"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDescription"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasElapsedDuration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasInterruptionSensitivity"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasM2MInterfaceLocation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasManufacturer"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasManufacturerProductID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMeasurementUnit"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasObservationDuration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasObservedValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasOrder"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasPeakPower"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasServiceName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasStateDuration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasTransitionProbability"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasUnixStartTime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasWorkingPowerTolerance"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isControllable"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isUserDriven"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasConsumption"/>
+        <Class IRI="#Service"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDelaySensitivity"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#Service"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasElapsedDuration"/>
+        <Class IRI="#Status"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInterruptionSensitivity"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasM2MInterfaceLocation"/>
+        <Class IRI="#VirtualService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasManufacturer"/>
+        <Class IRI="#Appliance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasManufacturerProductID"/>
+        <Class IRI="#Appliance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMeasurementUnit"/>
+        <Class IRI="#Feature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasObservationDuration"/>
+        <Class IRI="#Observation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasObservedValue"/>
+        <Class IRI="#Feature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOrder"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPeakPower"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasServiceName"/>
+        <Class IRI="#Service"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStateDuration"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTransitionProbability"/>
+        <Class IRI="#Transition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasUnixStartTime"/>
+        <Class IRI="#Status"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWorkingPowerTolerance"/>
+        <Class IRI="#State"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#implementsM2MTechnology"/>
+        <Class IRI="#SmartAppliance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isControllable"/>
+        <Class IRI="#Appliance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isUserDriven"/>
+        <Class IRI="#Appliance"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasConsumption"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDelaySensitivity"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasElapsedDuration"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInterruptionSensitivity"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasM2MInterfaceLocation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasManufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasManufacturerProductID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMeasurementUnit"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasObservationDuration"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasObservedValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOrder"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPeakPower"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasServiceName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStateDuration"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTransitionProbability"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasUnixStartTime"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWorkingPowerTolerance"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#implementsM2MTechnology"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isControllable"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isUserDriven"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
